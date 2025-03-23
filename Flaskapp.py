@@ -8,9 +8,9 @@ from botocore.exceptions import NoCredentialsError
 app = FlaskLambda(__name__)
 
 # AWS Configurations
-S3_BUCKET = "your-s3-bucket-name"
-DYNAMO_TABLE = "your-dynamo-table-name"
-AWS_REGION = "your-region"
+S3_BUCKET = "image-bucket"
+DYNAMO_TABLE = "image-meta-table"
+AWS_REGION = "us-east-2"
 
 s3_client = boto3.client("s3")
 dynamo_client = boto3.resource("dynamodb", region_name=AWS_REGION)

@@ -1,4 +1,4 @@
 from app import app
 from mangum import Mangum
 
-handler = Mangum(app)
+handler = Mangum(Flaskapp)
